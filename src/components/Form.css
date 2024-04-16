@@ -1,0 +1,133 @@
+.form-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    .rose-color,
+    .black-color {
+      color: #ce9898;
+      text-align: center;
+      font-family: "Josefin Sans";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 42px;
+      letter-spacing: 10.825px;
+    }
+    .black-color {
+      color: #423a3a;
+    }
+  }
+  p {
+    color: #ce9898;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 16px 38px 32px 38px;
+  }
+  .input-container {
+    max-width: 311px;
+    margin: 32px auto;
+    position: relative;
+    input {
+      box-sizing: border-box;
+      padding-left: 15px;
+      position: absolute;
+      top: 0;
+      width: 311px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 28px;
+      border: 1px solid #ce9898;
+      opacity: 0.5;
+    }
+    .inputRed {
+      border: 2px solid #ff0202;
+      outline: none;
+    }
+    .wrong {
+      position: absolute;
+      right: 70px;
+      top: 10px;
+    }
+    button {
+      border: none;
+      background-color: rgba(245, 222, 179, 0);
+    }
+    .arrow {
+      position: absolute;
+      top: -5px;
+      right: -30px;
+    }
+  }
+  .alert-span {
+    position: absolute;
+    bottom: -70px;
+    left: 20px;
+    color: #f96464;
+    font-family: "Josefin Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .form-container {
+    .title-container {
+      .rose-color,
+      .black-color {
+        font-family: "Josefin Sans";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 64px; /* 100% */
+        letter-spacing: 17.321px;
+        text-align: start;
+      }
+
+      .alert-span {
+        position: absolute;
+        bottom: -70px;
+        left: 20px;
+        color: #f96464;
+        font-family: "Josefin Sans";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    p {
+      margin: 2rem 0;
+      text-align: left;
+      line-height: 28px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .input-container {
+      margin-left: 0;
+      input {
+        padding-left: 15px;
+        top: 0;
+        width: 445px;
+        height: 48px;
+      }
+      .wrong {
+        right: -50px;
+        top: 11px;
+      }
+      .arrow {
+        top: -7px;
+        right: -170px;
+        img {
+          height: 90px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.main-container {
+  .logo {
+    width: 100px;
+    height: 20.886px;
+    margin: 32px;
+  }
+  .girl {
+    width: 100%;
+  }
+  .girlDesktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    .main-container {
+      width: 1450px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      position: relative;
+      .logo {
+        width: 158px;
+        height: 33px;
+        margin: 64px 0 0 165px;
+      }
+      .girl {
+        display: none;
+      }
+      .girlDesktop {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+      }
+      .form-container {
+        margin: 0 0 150px 165px;
+        width: 444px;
+      }
+    }
+  }
+}
